@@ -1,0 +1,366 @@
+/* Life Dashboard — styles */
+
+/* ============================================================
+   1. CUSTOM PROPERTIES  (Task 3.1)
+   ============================================================ */
+:root {
+  /* Colour palette */
+  --color-bg:       #0f0f13;
+  --color-surface:  #1a1a24;
+  --color-border:   #2e2e42;
+  --color-accent:   #7c6af5;
+  --color-text:     #e8e8f0;
+  --color-muted:    #8888a8;
+  --color-success:  #4caf82;
+  --color-danger:   #e05a5a;
+  --color-warning:  #f0a040;
+
+  /* Typography */
+  --font-family:    system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm:   14px;
+  --font-size-lg:   20px;
+  --font-size-xl:   32px;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+
+  /* Radius / shadow */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   2. RESET AND BASE  (Task 3.1)
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================================
+   3. LAYOUT  (Task 3.2)
+   ============================================================ */
+
+/* Page grid — single column by default */
+.dashboard {
+  display: grid;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+/* Two-column grid above 640 px */
+@media (min-width: 640px) {
+  .dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Greeting spans both columns on wide screens */
+.widget--greeting {
+  grid-column: 1 / -1;
+}
+
+/* ============================================================
+   4. WIDGET BASE  (Task 3.3)
+   ============================================================ */
+.widget {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-lg);
+}
+
+/* ---- Greeting widget ---- */
+.widget--greeting {
+  text-align: center;
+}
+
+#greeting-text {
+  font-size: var(--font-size-lg);
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+}
+
+#clock-time {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+#clock-date {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+}
+
+/* ---- Focus Timer widget ---- */
+.widget--timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+#timer-display {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-text);
+}
+
+.timer-controls {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---- Task List widget ---- */
+.widget--tasks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+#task-form {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+#task-input {
+  flex: 1 1 160px;
+}
+
+#task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Individual task item */
+.task__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+}
+
+.task__title {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+/* Requirement 3.5 — strikethrough for complete tasks */
+.task--complete .task__title {
+  text-decoration: line-through;
+  color: var(--color-muted);
+}
+
+.task__edit-input {
+  flex: 1;
+  font-size: var(--font-size-sm);
+}
+
+.task__actions {
+  display: flex;
+  gap: var(--space-xs);
+  flex-shrink: 0;
+}
+
+/* ---- Quick Links widget ---- */
+.widget--links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+#link-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+#link-label {
+  flex: 1 1 100px;
+}
+
+#link-url {
+  flex: 2 1 180px;
+}
+
+#links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* Individual link entry row */
+.link__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* ============================================================
+   5. FORM INPUTS  (Task 3.3)
+   ============================================================ */
+input[type="text"],
+input[type="url"] {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-md);
+  min-width: 0;
+  width: 100%;
+}
+
+input[type="text"]::placeholder,
+input[type="url"]::placeholder {
+  color: var(--color-muted);
+}
+
+input[type="text"]:focus-visible,
+input[type="url"]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-color: var(--color-accent);
+}
+
+/* ============================================================
+   6. BUTTONS  (Task 3.3)
+   ============================================================ */
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);  /* minimum 14 px — Requirement 6.4 */
+  font-weight: 500;
+  line-height: 1;
+  padding: var(--space-sm) var(--space-md);
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Primary — accent fill */
+.btn--primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff; /* contrast ≥ 4.5:1 against #7c6af5 */
+}
+
+.btn--primary:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+/* Ghost — outline only */
+.btn--ghost {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background-color: var(--color-border);
+}
+
+/* Danger — red fill */
+.btn--danger {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  color: #ffffff; /* contrast ≥ 4.5:1 against #e05a5a */
+}
+
+.btn--danger:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+/*
+ * Disabled state — applies to native `disabled` attribute and
+ * aria-disabled="true" (set together on every disabled button).
+ * Requirements 2.8, 2.9, 2.10
+ */
+button:disabled,
+button[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Focus ring on all interactive elements — Requirement 6.5 */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   7. INLINE VALIDATION MESSAGES  (Task 3.3)
+   ============================================================ */
+#task-error,
+#link-error {
+  font-size: var(--font-size-sm);
+  color: var(--color-danger);
+  min-height: 1.25em; /* reserve space to avoid layout shift */
+}
+
+/* ============================================================
+   8. STORAGE ERROR BANNER  (Task 3.3)
+   ============================================================ */
+.storage-error {
+  background-color: rgba(224, 90, 90, 0.15);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-sm);
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-md);
+}

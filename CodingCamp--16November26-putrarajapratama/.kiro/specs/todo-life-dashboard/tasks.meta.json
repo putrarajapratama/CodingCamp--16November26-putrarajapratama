@@ -1,0 +1,228 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold project structure": [
+      {
+        "executionId": "29e1d03d-bcda-46c0-b3e2-8f72b81fcb78",
+        "chatSessionId": "sess_f2b278e9-dd14-4d45-8b93-9f58f3faa0a2",
+        "timestamp": 1795094250483
+      },
+      {
+        "executionId": "29e1d03d-bcda-46c0-b3e2-8f72b81fcb78",
+        "chatSessionId": "sess_f2b278e9-dd14-4d45-8b93-9f58f3faa0a2",
+        "timestamp": 1795094286395
+      }
+    ],
+    "2. Build HTML widget shells": [
+      {
+        "executionId": "6c155150-13bd-4385-9377-d8adc61a3cdc",
+        "chatSessionId": "sess_7838bc07-8033-4fa7-882a-3bab1f411587",
+        "timestamp": 1795094503519
+      },
+      {
+        "executionId": "6c155150-13bd-4385-9377-d8adc61a3cdc",
+        "chatSessionId": "sess_7838bc07-8033-4fa7-882a-3bab1f411587",
+        "timestamp": 1795094540693
+      }
+    ],
+    "2.1 Add Greeting widget markup": [
+      {
+        "executionId": "0d5956ba-2e86-432c-8ab4-6df928d411a7",
+        "chatSessionId": "sess_36438190-fd49-479b-89ea-9d74efa941c8",
+        "timestamp": 1795094637453
+      },
+      {
+        "executionId": "0d5956ba-2e86-432c-8ab4-6df928d411a7",
+        "chatSessionId": "sess_36438190-fd49-479b-89ea-9d74efa941c8",
+        "timestamp": 1795094660450
+      }
+    ],
+    "2.2 Add Focus Timer widget markup": [
+      {
+        "executionId": "c0ceba29-4e39-4abf-b111-9fd4f4bd6360",
+        "chatSessionId": "sess_4ab9ce1b-8c08-4c90-9a00-0d9dafe35d88",
+        "timestamp": 1795094739459
+      },
+      {
+        "executionId": "c0ceba29-4e39-4abf-b111-9fd4f4bd6360",
+        "chatSessionId": "sess_4ab9ce1b-8c08-4c90-9a00-0d9dafe35d88",
+        "timestamp": 1795094770178
+      }
+    ],
+    "2.3 Add Task List widget markup": [
+      {
+        "executionId": "ee4da718-ed4f-4acc-b1a9-2e9f38e9a635",
+        "chatSessionId": "sess_7d46408a-9c92-4248-b08a-7aa924c67ace",
+        "timestamp": 1795094789018
+      },
+      {
+        "executionId": "ee4da718-ed4f-4acc-b1a9-2e9f38e9a635",
+        "chatSessionId": "sess_7d46408a-9c92-4248-b08a-7aa924c67ace",
+        "timestamp": 1795094818717
+      }
+    ],
+    "2.4 Add Quick Links widget markup": [
+      {
+        "executionId": "37423824-5114-4003-9677-6ecdddfe69f7",
+        "chatSessionId": "sess_1d33f359-86ec-4372-9133-3959dfe1f366",
+        "timestamp": 1795094830934
+      },
+      {
+        "executionId": "37423824-5114-4003-9677-6ecdddfe69f7",
+        "chatSessionId": "sess_1d33f359-86ec-4372-9133-3959dfe1f366",
+        "timestamp": 1795094855237
+      }
+    ],
+    "3. Implement CSS — custom properties, reset, and layout": [
+      {
+        "executionId": "4062558b-dfc4-442d-aff6-5701e814073d",
+        "chatSessionId": "sess_df855dac-23ca-43eb-b283-0137f42fea88",
+        "timestamp": 1795094878269
+      },
+      {
+        "executionId": "4062558b-dfc4-442d-aff6-5701e814073d",
+        "chatSessionId": "sess_df855dac-23ca-43eb-b283-0137f42fea88",
+        "timestamp": 1795094970683
+      }
+    ],
+    "3.2 Implement responsive grid layout": [
+      {
+        "executionId": "0bb08f20-09d6-4f71-8bf7-1fce9b93382c",
+        "chatSessionId": "sess_c0f11483-18e5-4779-ae22-514ff6c86c03",
+        "timestamp": 1795094984035
+      },
+      {
+        "executionId": "0bb08f20-09d6-4f71-8bf7-1fce9b93382c",
+        "chatSessionId": "sess_c0f11483-18e5-4779-ae22-514ff6c86c03",
+        "timestamp": 1795095003128
+      }
+    ],
+    "3.3 Implement widget and button component styles": [
+      {
+        "executionId": "92a7ddcd-c772-4132-8ab0-7e59a3e48d19",
+        "chatSessionId": "sess_d8a7bb14-0e3d-40f3-a097-3a2f2627c73e",
+        "timestamp": 1795095019582
+      },
+      {
+        "executionId": "92a7ddcd-c772-4132-8ab0-7e59a3e48d19",
+        "chatSessionId": "sess_d8a7bb14-0e3d-40f3-a097-3a2f2627c73e",
+        "timestamp": 1795095069966
+      }
+    ],
+    "5. Implement GreetingWidget": [
+      {
+        "executionId": "cf08fe4e-f559-42ec-aae5-dec98d9a9ab3",
+        "chatSessionId": "sess_3104684a-d5c8-43b4-93dd-df545226930c",
+        "timestamp": 1795095091117
+      },
+      {
+        "executionId": "cf08fe4e-f559-42ec-aae5-dec98d9a9ab3",
+        "chatSessionId": "sess_3104684a-d5c8-43b4-93dd-df545226930c",
+        "timestamp": 1795095158230
+      }
+    ],
+    "5.1 Implement core greeting helpers": [
+      {
+        "executionId": "d210d14b-2a67-4964-ba95-67542f8a8000",
+        "chatSessionId": "sess_aeac0370-a7e0-490d-b020-0a7d38f6eff5",
+        "timestamp": 1795095175352
+      },
+      {
+        "executionId": "d210d14b-2a67-4964-ba95-67542f8a8000",
+        "chatSessionId": "sess_aeac0370-a7e0-490d-b020-0a7d38f6eff5",
+        "timestamp": 1795095203777
+      }
+    ],
+    "5.3 Implement GreetingWidget init and tick loop": [
+      {
+        "executionId": "576ec520-b6ea-45a9-a951-e89b83b5e86f",
+        "chatSessionId": "sess_0e0a1d76-cbbe-4f87-867e-03f8b242aecf",
+        "timestamp": 1795095216432
+      },
+      {
+        "executionId": "576ec520-b6ea-45a9-a951-e89b83b5e86f",
+        "chatSessionId": "sess_0e0a1d76-cbbe-4f87-867e-03f8b242aecf",
+        "timestamp": 1795095243540
+      }
+    ],
+    "6. Implement FocusTimer": [
+      {
+        "executionId": "c7a90ada-e3c7-4135-8850-c316bb3c473b",
+        "chatSessionId": "sess_c139e80c-19de-4081-8073-0ce392bc1a38",
+        "timestamp": 1795095266610
+      },
+      {
+        "executionId": "c7a90ada-e3c7-4135-8850-c316bb3c473b",
+        "chatSessionId": "sess_c139e80c-19de-4081-8073-0ce392bc1a38",
+        "timestamp": 1795095336736
+      }
+    ],
+    "6.3 Implement timer render, signal, and button wiring": [
+      {
+        "executionId": "ba479c3d-f237-49cd-9e1d-425e08da1d29",
+        "chatSessionId": "sess_bd7f89c3-f339-4ac9-83b4-6d0edb40306d",
+        "timestamp": 1795095362812
+      },
+      {
+        "executionId": "ba479c3d-f237-49cd-9e1d-425e08da1d29",
+        "chatSessionId": "sess_bd7f89c3-f339-4ac9-83b4-6d0edb40306d",
+        "timestamp": 1795095420247
+      }
+    ],
+    "7. Implement TaskList": [
+      {
+        "executionId": "8e258f61-53d9-46a6-8463-5a2cb146651f",
+        "chatSessionId": "sess_c882a60c-613c-4237-be2a-cd1264025c10",
+        "timestamp": 1795095439275
+      },
+      {
+        "executionId": "8e258f61-53d9-46a6-8463-5a2cb146651f",
+        "chatSessionId": "sess_c882a60c-613c-4237-be2a-cd1264025c10",
+        "timestamp": 1795095561272
+      }
+    ],
+    "8. Implement QuickLinks": [
+      {
+        "executionId": "4e3436e9-fc51-46b6-bcb4-484f8c299b26",
+        "chatSessionId": "sess_392488d1-8335-4dc5-8f06-3f1159c5fd85",
+        "timestamp": 1795095590421
+      },
+      {
+        "executionId": "4e3436e9-fc51-46b6-bcb4-484f8c299b26",
+        "chatSessionId": "sess_392488d1-8335-4dc5-8f06-3f1159c5fd85",
+        "timestamp": 1795095664914
+      }
+    ],
+    "8.3 Implement link add/remove and render": [
+      {
+        "executionId": "04824119-28a6-4b38-af87-a78c0054f646",
+        "chatSessionId": "sess_04b6e281-bddc-406b-b3d2-fa0d4d4bf1ab",
+        "timestamp": 1795095716643
+      },
+      {
+        "executionId": "04824119-28a6-4b38-af87-a78c0054f646",
+        "chatSessionId": "sess_04b6e281-bddc-406b-b3d2-fa0d4d4bf1ab",
+        "timestamp": 1795095771332
+      }
+    ],
+    "9. Checkpoint — Ensure all unit and property tests pass": [
+      {
+        "executionId": "efbaf25f-c35c-4036-af0f-4b863c5ae731",
+        "chatSessionId": "sess_9cb77472-ca17-4e15-9f6d-8335dda33f33",
+        "timestamp": 1795095807305
+      },
+      {
+        "executionId": "efbaf25f-c35c-4036-af0f-4b863c5ae731",
+        "chatSessionId": "sess_9cb77472-ca17-4e15-9f6d-8335dda33f33",
+        "timestamp": 1795095879143
+      }
+    ],
+    "10. Wire all widgets and finalise app.js": [
+      {
+        "executionId": "c0d69ce3-51a8-4a0d-b84d-abb633057a6f",
+        "chatSessionId": "sess_e60e6e86-aa19-4e3b-a838-ef434a7e8e63",
+        "timestamp": 1795095899148
+      }
+    ]
+  }
+}
