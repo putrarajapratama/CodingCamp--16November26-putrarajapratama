@@ -222,6 +222,23 @@
         "executionId": "c0d69ce3-51a8-4a0d-b84d-abb633057a6f",
         "chatSessionId": "sess_e60e6e86-aa19-4e3b-a838-ef434a7e8e63",
         "timestamp": 1795095899148
+      },
+      {
+        "executionId": "443c19f5-9ceb-478c-9f3d-968bc62696d6",
+        "chatSessionId": "sess_1fcedff0-5c6f-4dc8-b7a0-9537509d1508",
+        "timestamp": 1795131579299
+      }
+    ],
+    "8.1 Implement link helpers and storage": [
+      {
+        "executionId": "443c19f5-9ceb-478c-9f3d-968bc62696d6",
+        "chatSessionId": "sess_1fcedff0-5c6f-4dc8-b7a0-9537509d1508",
+        "timestamp": 1795131579511
+      },
+      {
+        "executionId": "443c19f5-9ceb-478c-9f3d-968bc62696d6",
+        "chatSessionId": "sess_1fcedff0-5c6f-4dc8-b7a0-9537509d1508",
+        "timestamp": 1795131615171
       }
     ]
   }

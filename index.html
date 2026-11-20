@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- Top bar: theme toggle -->
+    <header class="topbar">
+      <button id="theme-toggle" class="btn btn--ghost topbar__theme-btn" aria-label="Switch to light mode">
+        <span id="theme-icon" aria-hidden="true">☀️</span>
+        <span id="theme-label">Light mode</span>
+      </button>
+    </header>
+
     <main class="dashboard">
 
       <!-- Greeting Widget -->
@@ -14,15 +23,30 @@
         <p id="greeting-text"></p>
         <time id="clock-time"></time>
         <p id="clock-date"></p>
+        <!-- Challenge: Custom name in greeting -->
+        <div class="greeting-name-row">
+          <input id="name-input" type="text" maxlength="30"
+                 placeholder="Enter your name…"
+                 aria-label="Your name" />
+          <button id="name-save" class="btn btn--ghost">Save name</button>
+        </div>
       </section>
 
       <!-- Focus Timer Widget -->
       <section class="widget widget--timer">
         <div id="timer-display" role="timer" aria-live="polite" aria-atomic="true">25:00</div>
+        <!-- Challenge: Change Pomodoro time -->
+        <div class="timer-settings">
+          <label for="timer-duration" class="timer-settings__label">Session</label>
+          <input id="timer-duration" type="number" min="1" max="60" value="25"
+                 aria-label="Session duration in minutes" />
+          <span class="timer-settings__unit">min</span>
+          <span class="timer-settings__hint">(only while idle)</span>
+        </div>
         <div class="timer-controls">
-          <button id="btn-start" type="button">Start</button>
-          <button id="btn-stop" type="button" disabled>Stop</button>
-          <button id="btn-reset" type="button">Reset</button>
+          <button id="btn-start" type="button" class="btn btn--primary">Start</button>
+          <button id="btn-stop"  type="button" class="btn btn--ghost" disabled>Stop</button>
+          <button id="btn-reset" type="button" class="btn btn--ghost">Reset</button>
         </div>
         <div id="timer-announcement" aria-live="assertive" aria-atomic="true" class="sr-only"></div>
       </section>
@@ -31,7 +55,7 @@
       <section class="widget widget--tasks">
         <form id="task-form">
           <input id="task-input" type="text" maxlength="200" placeholder="Add a new task…" aria-label="New task title" />
-          <button id="task-submit" type="submit">Add Task</button>
+          <button id="task-submit" type="submit" class="btn btn--primary">Add Task</button>
         </form>
         <p id="task-error" role="alert" aria-live="polite"></p>
         <ul id="task-list"></ul>
@@ -42,7 +66,7 @@
         <form id="link-form">
           <input id="link-label" type="text" maxlength="50" placeholder="Label" aria-label="Link label" />
           <input id="link-url" type="url" maxlength="2048" placeholder="https://…" aria-label="Link URL" />
-          <button id="link-submit" type="submit">Add Link</button>
+          <button id="link-submit" type="submit" class="btn btn--primary">Add Link</button>
         </form>
         <p id="link-error" role="alert" aria-live="polite"></p>
         <div id="links-list"></div>

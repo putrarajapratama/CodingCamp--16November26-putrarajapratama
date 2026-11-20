@@ -125,7 +125,7 @@ Implement a zero-dependency, single-page dashboard using HTML, CSS, and Vanilla 
     - _Requirements: 3.1, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10_
 
 - [~] 8. Implement QuickLinks
-  - [ ] 8.1 Implement link helpers and storage
+  - [x] 8.1 Implement link helpers and storage
     - Write `_validate(label, url)` returning `null` only when label is non-empty (trimmed, ≤ 50 chars), URL is non-empty (trimmed, ≤ 2048 chars), and URL starts with `"http://"` or `"https://"`.
     - Write `_load()` and `_save()` mirroring TaskList's pattern for `StorageService` key `"links"`.
     - _Requirements: 4.2, 4.3, 4.5, 4.6_
@@ -147,7 +147,7 @@ Implement a zero-dependency, single-page dashboard using HTML, CSS, and Vanilla 
 - [x] 9. Checkpoint — Ensure all unit and property tests pass
   - Ensure all tests pass. Ask the user if any questions arise before proceeding.
 
-- [-] 10. Wire all widgets and finalise app.js
+- [ ] 10. Wire all widgets and finalise app.js
   - Wrap all widget object literals in a single IIFE inside `app.js`.
   - Call `GreetingWidget.init()`, `FocusTimer.init()`, `TaskList.init()`, `QuickLinks.init()` in sequence inside the IIFE; the script's `defer` attribute ensures the DOM is ready.
   - Confirm `StorageService` is declared before all widget objects in the file.
