@@ -130,7 +130,7 @@ Implement a zero-dependency, single-page dashboard using HTML, CSS, and Vanilla 
     - Write `_load()` and `_save()` mirroring TaskList's pattern for `StorageService` key `"links"`.
     - _Requirements: 4.2, 4.3, 4.5, 4.6_
 
-  - [~] 8.2 Write property tests for QuickLinks helpers
+  - [x] 8.2 Write property tests for QuickLinks helpers
     - **Property 8: Link validation covers all invalid inputs** — generator: `fc.tuple(fc.string(), fc.string())` covering all invalid combos
     - **Validates: Requirements 4.2, 4.3**
     - **Property 9: Link addition round-trip** — generator: valid label + valid URL arbitraries
